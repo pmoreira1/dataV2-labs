@@ -4,52 +4,52 @@ Extracted from the PEP-8 Agreement (https://realpython.com/python-pep8/)
 
 ### Naming:
 
-*Variables:*
+**Variables:**
 Use a lowercase single letter, word, or words. Separate words with underscores to improve readability.
 `x, var, my_variable`
 
-*Functions:*
+**Functions:**
 Use a lowercase word or words. Separate words by underscores to improve readability.
 `function, my_function`
 
-*Class:*
+**Class:**
 Start each word with a capital letter. Do not separate words with underscores. This style is called camel case.	
 `Model, MyClass`
 
-*Method:*
+**Method:**
 Use a lowercase word or words. Separate words with underscores to improve readability.
 `class_method, method`
 
-*Constant:*
+**Constant:**
 Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.
 `CONSTANT, MY_CONSTANT, MY_LONG_CONSTANT`
 
-*Module:*
+**Module:**
 Use a short, lowercase word or words. Separate words with underscores to improve readability.
 `module.py, my_module.py`
 
-*Package:* Use a short, lowercase word or words. Do not separate words with underscores.
+**Package:** Use a short, lowercase word or words. Do not separate words with underscores.
 `package, mypackage`
 		
 		
 ### Code Layout:
 
-*Surround top-level functions and classes with two blank lines*
+**Surround top-level functions and classes with two blank lines**
 
-*Surround method definitions inside classes with a single blank line*
+**Surround method definitions inside classes with a single blank line**
 
-*Use blank lines sparingly inside functions to show clear steps*
+**Use blank lines sparingly inside functions to show clear steps**
 
-*Maximum Line Length and Line Breaking* - Try to maintain lines with a maximum of 78 characters
+**Maximum Line Length and Line Breaking** - Try to maintain lines with a maximum of 78 characters
 
-*Indentation* - Use of 4 consecutive spaces, using spaces instead of Tabs;
+**Indentation** - Use of 4 consecutive spaces, using spaces instead of Tabs;
 
 
 ### Code Comments:
 
-*Relevance* - Comments should not state the obvious, but the actual functionality of what's being commented. 
+**Relevance** - Comments should not state the obvious, but the actual functionality of what's being commented. 
 
-*Block Comments* - Use multiple lines to prevent exceeding the 72 characters. When using multiple lines maintain the indentation.
+**Block Comments** - Use multiple lines to prevent exceeding the 72 characters. When using multiple lines maintain the indentation.
 
 Example:
 
@@ -60,5 +60,5 @@ for i in range(0, 10):
     print(i, '\n') 
 ```
 
-*Inline comments* - Keep to bare minimum. Only if absolutely necessary.
+**Inline comments** - Keep to bare minimum. Only if absolutely necessary.
 
