@@ -6,11 +6,11 @@ FROM
     
 -- 2 Which is the genre with the most apps rated?
 SELECT 
-    prime_genre, SUM(rating_count_tot)
+    prime_genre, sum(rating_count_tot)
 FROM
     IHAMSFT.app
 GROUP BY prime_genre 
-ORDER BY SUM(rating_count_tot) DESC
+ORDER BY sum(rating_count_tot) DESC
 LIMIT 1;
 
 --  3 Which is the genre with most apps?
@@ -33,7 +33,7 @@ LIMIT 1;
 
 -- 5. Find the top 10 apps most rated.
 SELECT 
-    track_name,user_rating
+    track_name,user_rating,rating_count_tot
 FROM
     IHAMSFT.app
 ORDER BY rating_count_tot DESC
@@ -41,7 +41,7 @@ LIMIT 10;
 
 -- 6. Find the top 10 apps best rated by users.
 SELECT 
-    track_name
+    track_name, user_rating
 FROM
     IHAMSFT.app
 ORDER BY user_rating DESC

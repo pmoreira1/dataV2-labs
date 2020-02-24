@@ -1,16 +1,15 @@
-```
 **1. What are the different genres?**
 Games, Productivity, Weather, Shopping, Reference, Finance, Music, Utilities, Travel, Social Networking, Sports, Business, Health & Fitness, Entertainment, Photo & Video, Navigation, Education, Lifestyle
 Food & Drink, News, Book, Medical, Catalogs
 
 **2. Which is the genre with the most apps rated?**
-Social Networking
+Games with 52878491 ratings
 
 **3. Which is the genre with most apps?**
-Games
+Games with 3862 records
 
 **4. Which is the one with least?**
-Catalogs
+Catalogs with 10 apps
 
 **5. Find the top 10 apps most rated.**
 Facebook, Instagram, Clash of Clans, Temple Run, Pandora - Music & Radio, Pinterest, Bible, Candy Crush Saga, Spotify Music, Angry Birds
@@ -28,7 +27,7 @@ The top 10 user_rating contains mostly games and some paid apps.
 Most rated apps are not present in the top 10 for the best rated apps. Also free apps get more ratings than paid apps.
 
 **10. How could you take the top 3 regarding both user ratings and number of votes?**
-Creating a weigthing system. For example using the time an app has been on the app store.
+Creating a weighting system. For example using the time an app has been on the app store.
 
 **11. Do people care about the price of an app?** Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?
 
@@ -40,8 +39,8 @@ Paid Apps have a higher user rating average - Queries 11c and 11d
 Free Apps - 3.37;
 Paid Apps - 3.7.
 
-The number of Ratings decreases everytime the price goes up - Query 11f. E.G:
-```
+The number of Ratings decreases every time the price goes up - Query 11f. E.G:
+
 
 | price | number_of_apps | rating_count_avg | user_rating_avg |
 | ----- | -------------- | ---------------- | --------------- |
