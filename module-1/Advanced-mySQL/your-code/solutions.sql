@@ -1,7 +1,6 @@
 # CHALLENGE 1
 SELECT 
-    author_id,
-    ROUND((SUM(sales_royalty_sum) + advance), 2) AS total_profit
+    author_id, SUM(sales_royalty_sum + advance) AS total_profits
 FROM
     (SELECT 
         title_id,
@@ -20,7 +19,7 @@ FROM
     INNER JOIN titles t ON ta.title_id = t.title_id) q1
     GROUP BY author_id , title_id) q2
 GROUP BY author_id
-ORDER BY total_profit DESC
+ORDER BY total_profits DESC
 LIMIT 3;
 
 # CHALLENGE 2
@@ -52,7 +51,7 @@ SELECT
 -- GET FINAL RESULT USING THE TEMP TABLE profits_author
 SELECT 
     author_id,
-    ROUND((SUM(sales_royalty_sum) + advance), 2) AS total_profit
+    SUM(sales_royalty_sum + advance) AS total_profit
 FROM
     profits_author
 GROUP BY author_id
@@ -60,8 +59,9 @@ ORDER BY total_profit DESC
 LIMIT 3;
 
 #CHALLENGE 3
-CREATE TABLE most_profiting_authors AS (SELECT author_id AS au_id,
-    ROUND((SUM(sales_royalty_sum) + advance), 2) AS profits FROM
+CREATE TABLE most_profiting_authors AS (SELECT 
+    author_id, SUM(sales_royalty_sum + advance) AS total_profits
+FROM
     (SELECT 
         title_id,
             author_id,
@@ -78,4 +78,4 @@ CREATE TABLE most_profiting_authors AS (SELECT author_id AS au_id,
     INNER JOIN titleauthor ta ON ta.title_id = s.title_id
     INNER JOIN titles t ON ta.title_id = t.title_id) q1
     GROUP BY author_id , title_id) q2
-GROUP BY au_id)
+GROUP BY author_id)
