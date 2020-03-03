@@ -12,19 +12,15 @@ The following function shows one way to solve the problem but the code is not id
 Refactor the code based on what you have learned about code simplicity and efficiency.
 """
 
-def my_function(X):
-    solutions = []
-    for x in range(5, X):
-        for y in range(4, X):
-            for z in range(3, X):
-                if (x*x==y*y+z*z):
-                    solutions.append([x, y, z])
+
+def get_longest_side(max_side):
+    solutions = [[x, y, z] for x in range(5, max_side) for y in range(4, max_side) for z in range(3, max_side) if x**2 == y**2 + z**2]
     m = 0
     for solution in solutions:
         if m < max(solution):
             m = max(solution)
     return m
 
-X = input("What is the maximal length of the triangle side? Enter a number: ")
 
-print("The longest side possible is " + str(my_function(int(X))))
+size = int(input("What is the maximal length of the triangle side? Enter a number: "))
+print("The longest side possible is " + str(get_longest_side(size)))
