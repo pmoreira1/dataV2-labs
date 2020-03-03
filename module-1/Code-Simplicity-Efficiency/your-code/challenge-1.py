@@ -21,10 +21,13 @@ def operation(a, b, c):
 # Read the text number and translate it to int.
 def int_to_text(x):
     for t, i in int_translate.items():
-        if i == x:
-            return t
+        if i == abs(x):
+            result = t
             break
-
+    if x < 0:
+        return 'minus %s' % t
+    else:
+        return t
 
 # Create lists of allowed inputs
 allowed_int = ['zero', 'one', 'two', 'three', 'four', 'five']
