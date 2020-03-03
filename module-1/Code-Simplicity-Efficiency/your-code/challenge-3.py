@@ -23,4 +23,4 @@ def get_longest_side(max_side):
 
 
 size = int(input("What is the maximal length of the triangle side? Enter a number: "))
-print("The longest side possible is " + str(get_longest_side(size)))
+print("The longest side possible is", get_longest_side(size))
