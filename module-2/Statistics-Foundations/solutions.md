@@ -1,18 +1,19 @@
 ## Challenge 1
 One player rolls two dices. Describe the measurable space and the random variable for:
 
-Measurable Space = Outcome Space
-
 ### 1 - A. The values that the player obtains.
 Measurable Space - All the 36 possible combinations. {(1,1),(1,2),(1,3),(1,4),(1,5),...,(6,6)}
+
 Random Variable - The combination that came out
 
 ### 1 - B. The sum of the values obtained.
 Measurable Space - All the 36 possible combinations.
+
 Random Variable - Sum of both dice values. e.g.: (1,5) = 6
 
 ### 1 - C. The maximum value obtained after rolling both dices.
 Measurable Space - All the 36 possible combinations.
+
 Random Variable - The highest possible combination. Or a "normal" die would be (6,6) = 12
 
 ### Case A: Both values are greater than 5.
@@ -29,12 +30,18 @@ One player picks two cards from a poker deck. Describe the measurable space and 
 
 ### A. The number of figures he picks.
 Measurable Space - The Full deck
+
 Random Variable - Can be 0, 1 or 2 figures
+
 ### B. The sum of card values. Consider that the value of figures is 10 and the value of aces is 15.
 Measurable Space - The Full deck
+
 Random Variable - Can be any value between 4 and 30. e.g.:(2,2) = 4; (A,A) = 15
+
 ### C. The number of hearts or spades he picks.
+
 Measurable Space - The Full deck
+
 Random Variable - Can be 0, 1 or 2
 
 ### Case A: The number of figures in the cards the player picked is two.
@@ -51,21 +58,27 @@ Two players roll a dice. Describe the measurable space and the random variable f
 
 ### A. The score of player A.
 Measurable Space - Any Value between 2 and 12
+
 Random Variable - The score A
 
 ### B. The greatest score.
 Measurable Space - Any Value between 2 and 12
+
 Random Variable - Score A and Score B
 
 ### C. The earnings of player A if the game rules state that:
-"The player with the greatest score gets a coin from the other player.".
+#### "The player with the greatest score gets a coin from the other player.".
+
 Measurable space - Any Value between 2 and 12
+
 Random Variable - Win (+1) or Lose (-1)
 
 ### D. The earnings of player A if the game rules state that:
-"The player with the greatest score gets as many coins as the difference between the score of player A and player B.".
+#### "The player with the greatest score gets as many coins as the difference between the score of player A and player B.".
+
 Measurable space - Any Value between 2 and 12
-Random Variable -
+
+Random Variable - Can be any value between 0 and 5
 
 ### Case A: The score of player A is 2.
 {(2,1),(2,2),(2,3),(2,4),(2,5),(2,6)}
@@ -74,11 +87,13 @@ Random Variable -
 {(1,1),(2,1),(2,2),(1,2)}
 
 ### Case C: Considering the case where the winner gets as many coins as the difference between scores (D), describe:
-Player A wins at least 4 coins.
+#### Player A wins at least 4 coins.
+
 Score A >= Score B +4: {(5,1),(6,1),(6,2)}
 
-Player A loses more than 2 coins.
+#### Player A loses more than 2 coins.
+
 Score A < Score B -2 : {(1,4),(1,5),(1,6),(2,5),(2,6),(3,6)}
 
-Player A neither wins nor loses coins.
+#### Player A neither wins nor loses coins.
 Score A = Score B : {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)}
