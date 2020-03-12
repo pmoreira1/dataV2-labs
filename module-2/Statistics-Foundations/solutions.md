@@ -17,10 +17,10 @@ Measurable Space - All the 36 possible combinations.
 Random Variable - The highest possible combination. Or a "normal" die would be (6,6) = 12
 
 ### Case A: Both values are greater than 5.
-Only happens if both dices are 6 (6,6)
+`Only happens if both dices are 6 (6,6)`
 
 ### Case B: The sum of values is even.
-To be even only when both values on the dice are even or odd
+`{(1,1),(1,3),(1,5),(2,2),(2,4),(2,6),(3,1),(3,3),(3,5),(4,2),(4,4),(4,6),(5,1),(5,3),(5,5),(6,2),(6,4),(6,6)}`
 
 ### Case C: The maximum is the value of both rolls.
 The same number on both dices.
@@ -45,14 +45,14 @@ Measurable Space - The Full deck
 Random Variable - Can be 0, 1 or 2
 
 ### Case A: The number of figures in the cards the player picked is two.
-There are 9 combinations possible: {(K,K),(K,Q),(K,J),(Q,Q),(Q,K),(Q,J),(J,J),(J,K),(J,Q)}
+`There are 9 combinations possible: {(K,K),(K,Q),(K,J),(Q,Q),(Q,K),(Q,J),(J,J),(J,K),(J,Q)}`
 
 ### Case B: The sum of card values is 17.
-Possible Combinations: {(A,2),(K,7),(J,7),(Q,7),(10,7),(9,8),(2,A),(7,K),(7,J),(7,Q),(7,10),(8,9)}
+`Possible Combinations: {(A,2),(K,7),(J,7),(Q,7),(10,7),(9,8),(2,A),(7,K),(7,J),(7,Q),(7,10),(8,9)}`
 
 ### Case C: The value of both cards is less than 8.
-Can only be a combination of cards with a number lower than 8: {(2,2),(2,3),(2,4),(2,5),(2,6),(2,7),..,(7,2),(7,3),(7,4),(7,5),(7,6),(7,6)}
-
+`Can only be a combination of cards with a number lower than 8: {(2,2),(2,3),(2,4),(2,5),(2,6),(2,7),..,(7,2),(7,3),(7,4),(7,5),(7,6),(7,6)}
+`
 ## Challenge 3
 Two players roll a dice. Describe the measurable space and the random variable for:
 
@@ -94,4 +94,4 @@ Random Variable - Can be any value between 0 and 5
 `Score A < Score B -2 : {(1,4),(1,5),(1,6),(2,5),(2,6),(3,6)}`
 
 #### Player A neither wins nor loses coins.
-Score A = Score B : `{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)}`
+`Score A = Score B : {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)}`
