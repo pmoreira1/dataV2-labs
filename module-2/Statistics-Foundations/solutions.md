@@ -81,19 +81,17 @@ Measurable space - Any Value between 2 and 12
 Random Variable - Can be any value between 0 and 5
 
 ### Case A: The score of player A is 2.
-{(2,1),(2,2),(2,3),(2,4),(2,5),(2,6)}
-
+`{(2,1),(2,2),(2,3),(2,4),(2,5),(2,6)}`
 ### Case B: The greatest score is lower or equal than 2.
-{(1,1),(2,1),(2,2),(1,2)}
-
+`{(1,1),(2,1),(2,2),(1,2)}`
 ### Case C: Considering the case where the winner gets as many coins as the difference between scores (D), describe:
 #### Player A wins at least 4 coins.
 
-Score A >= Score B +4: {(5,1),(6,1),(6,2)}
+`Score A >= Score B +4: {(5,1),(6,1),(6,2)}`
 
 #### Player A loses more than 2 coins.
 
-Score A < Score B -2 : {(1,4),(1,5),(1,6),(2,5),(2,6),(3,6)}
+`Score A < Score B -2 : {(1,4),(1,5),(1,6),(2,5),(2,6),(3,6)}`
 
 #### Player A neither wins nor loses coins.
-Score A = Score B : {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)}
+Score A = Score B : `{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)}`
