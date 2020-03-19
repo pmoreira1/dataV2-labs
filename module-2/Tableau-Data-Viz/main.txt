@@ -1,0 +1,3 @@
+Main - https://public.tableau.com/profile/pedro.moreira#!/vizhome/LabDataVisualizationwithTableau_15846263580170/Dashboard1
+
+Bonus - https://public.tableau.com/profile/pedro.moreira#!/vizhome/BonusDataVisualizationwithTableau/GDPCapita
