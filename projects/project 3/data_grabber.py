@@ -123,8 +123,8 @@ else:
 # Load excel file from https://www.bsg.ox.ac.uk/sites/default/files/OxCGRT_Download_latest_data.xlsx
 # Clean data and store it as local csv
 # Load Excel directly in pandas
-# measures_tempfile = 'https://www.bsg.ox.ac.uk/sites/default/files/OxCGRT_Download_latest_data.xlsx'
-measures_tempfile = os.path.join(DOWNLOAD_FOLDER, 'OxCGRT_Download_latest_data.xlsx')
+measures_tempfile = 'https://www.bsg.ox.ac.uk/sites/default/files/OxCGRT_Download_latest_data.xlsx'
+# measures_tempfile = os.path.join(DOWNLOAD_FOLDER, 'OxCGRT_Download_latest_data.xlsx')
 measures_file = os.path.join(DATA_FOLDER, 'measures.csv')
 
 measure_data = pd.read_excel(measures_tempfile)
